@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink, Route } from "react-router-dom";
+import About from "../pages/About";
 
 const Nav = () => {
   return (
     <div>
-      <Link to="/">Home</Link> <Link to="/ships">Ships</Link>{" "}
-      <Link to="/destinations">Destinations</Link>{" "}
-      <Link to="/about">About</Link> <Link to="/contactus">Contact us</Link>
+      <nav>
+        <NavLink to="/">Home</NavLink> <NavLink to="/ships">Ships</NavLink>{" "}
+        <NavLink to="/destinations">Destinations</NavLink>{" "}
+        <NavLink to="/about">About us</NavLink>{" "}
+        <NavLink to="/contactus">Contact us</NavLink>
+      </nav>
     </div>
   );
 };
