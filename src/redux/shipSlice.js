@@ -6,12 +6,18 @@ export const shipSlice = createSlice({
   name: "ships",
   initialState,
   reducers: {
-    setShipData: (state, action) => {
-      state.ships = action.payload;
+    setShipData: (state, { payload }) => {
+      state.shipData = payload;
+    },
+    setSearchTerm: (state, { payload }) => {
+      state.searchTerm = payload;
     },
   },
 });
 
-export const { setShipData } = shipSlice.actions;
+export const { setShipData, setSearchTerm } = shipSlice.actions;
+
+export const selectShipData = (state) => state.ships.shipData;
+export const selectSearchTerm = (state) => state.ships.searchTerm;
 
 export default shipSlice.reducer;

@@ -8,9 +8,11 @@ const App = () => {
   const dispatch = useDispatch();
 
   const getInitialShipData = async () => {
-    const { data } = await axios.get(`https://api.spacexdata.com/v4/ships`);
-    console.log(data);
-    dispatch(setShipData(data));
+    const { data: shipData } = await axios.get(
+      `https://api.spacexdata.com/v4/ships`
+    );
+    console.log(shipData);
+    dispatch(setShipData(shipData));
   };
 
   useEffect(() => {
