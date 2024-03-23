@@ -2,7 +2,7 @@ import React from "react";
 const Destinations = () => {
   return (
     <>
-      <p>Destinations</p>
+      <h2>Destinations</h2>
     </>
   );
 };

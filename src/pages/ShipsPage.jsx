@@ -3,7 +3,7 @@ import Ships from "../components/Ships";
 const ShipsPage = () => {
   return (
     <>
-      <p>ships</p>
+      <h2>Ships</h2>
       <Ships />
     </>
   );

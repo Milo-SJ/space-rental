@@ -3,6 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
+      <h2>About Us</h2>
       <div>
         <p>
           Welcome to AstroHopper Rentals, your premier destination for space

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { setShipData } from "../redux/shipSlice";
+import { Link } from "react-router-dom";
 
 const Ships = () => {
   const shipData = useSelector((state) => state.ships.shipData);
@@ -23,6 +23,9 @@ const Ships = () => {
                 Rental price per week:{" "}
                 {shipCost ? `£${shipCost}` : "please contact us for pricing"}
               </p>
+              <Link to="/contactus">
+                <button>Contact us</button>
+              </Link>
             </div>
           );
         })

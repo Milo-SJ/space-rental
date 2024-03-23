@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Destinations from "../pages/Destinations";
 import Contact from "../pages/Contact";
 import ShipsPage from "../pages/ShipsPage";
+import Home from "../pages/Home";
 
 const Interface = () => {
   return (
@@ -17,6 +18,7 @@ const Interface = () => {
       <main>
         <div>
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />;
             <Route path="/destinations" element={<Destinations />} />;
             <Route path="/contactus" element={<Contact />} />;
